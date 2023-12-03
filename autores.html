@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Listado de Autores</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2; /* Fondo claro */
+            color: #333; /* Texto oscuro para mejor contraste */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #4a86e8; /* Color azul claro */
+            margin-top: 50px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .lista-autores {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .autor-item {
+            background-color: #fff; /* Fondo blanco para los elementos de la lista */
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%; /* Ancho del elemento de lista */
+            max-width: 600px; /* Máximo ancho para mejor visualización en pantallas grandes */
+            border: 1px solid #ddd; /* Borde sutil */
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            display: flex; /* Para alinear imagen y texto */
+            align-items: center; /* Alineación vertical */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .autor-item img {
+            border-radius: 50%; /* Hacer la imagen redonda */
+            margin-right: 15px; /* Espaciado entre imagen y texto */
+            width: 100px; /* Tamaño fijo para la imagen */
+            height: 100px; /* Altura fija para mantener la relación de aspecto */
+        }
+
+        .autor-item:hover {
+            transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el mouse */
+        }
+
+        .libros {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .libros li {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<h1>Listado de Autores</h1>
+<p>Aqui se mostrara el listado de todos los autores junto con algunos de sus libros mas destacados.</p>
+
+<!-- Lista de autores -->
+<ul class="lista-autores">
+    <li class="autor-item">
+        <img src="https://www.biografiasyvidas.com/reportaje/garcia_marquez/fotos/garcia_marquez_420a.jpg" alt="Gabriel Garcia Marquez">
+        <div>
+            Gabriel Garcia Marquez
+            <ul class="libros">
+                <li>Cien anos de soledad</li>
+                <li>El amor en los tiempos del colera</li>
+                <li>Cronica de una muerte anunciada</li>
+            </ul>
+        </div>
+    </li>
+    <li class="autor-item">
+        <img src="https://media.newyorker.com/photos/5c143d27d2db9849ec9e3baf/1:1/w_1820,h_1820,c_limit/960108_ra604.jpg" alt="Jane Austen">
+        <div>
+            Jane Austen
+            <ul class="libros">
+                <li>Orgullo y Prejuicio</li>
+                <li>Sentido y Sensibilidad</li>
+                <li>Emma</li>
+            </ul>
+        </div>
+    </li>
+    <li class="autor-item">
+        <img src="https://www.biografiasyvidas.com/biografia/o/fotos/orwell.jpg" alt="George Orwell">
+        <div>
+            George Orwell
+            <ul class="libros">
+                <li>1984</li>
+                <li>Rebelion en la granja</li>
+                <li>El camino a Wigan Pier</li>
+            </ul>
+        </div>
+    </li>
+    <!-- Agrega más autores y libros según sea necesario -->
+</ul>
+
+</body>
+</html>

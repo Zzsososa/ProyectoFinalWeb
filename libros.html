@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Listado de Libros</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Fondo claro */
+            color: #212529; /* Texto oscuro para contraste */
+        }
+
+        .container {
+            padding-top: 20px;
+        }
+
+        h1 {
+            color: #007bff; /* Color azul de Bootstrap */
+        }
+
+        .lista-libros {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lista-libros li {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #dee2e6; /* Borde sutil */
+            border-radius: 0.25rem; /* Bordes redondeados */
+            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075); /* Sombra suave */
+        }
+
+        .agotado {
+            color: #dc3545; /* Rojo para destacar que esta agotado */
+        }
+
+        .disponible {
+            color: #28a745; /* Verde para indicar disponibilidad */
+        }
+
+        .descripcion {
+            background-color: #e9ecef; /* Fondo gris claro */
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 0.25rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Lista de libros</h1>
+    <p>Aqui puede visualizar los libros disponibles de nuestro portal web.</p>
+
+    <div class="descripcion">
+        <p>Descubre nuestra seleccion de libros, desde clasicos hasta los mas modernos. Encuentra lecturas para todos los gustos y edades. Explora y elige tu proxima aventura literaria!</p>
+    </div>
+
+    <ul class="lista-libros">
+        <li class="agotado">Los 7 habitos de los adolescentes (Agotado)</li>
+        <li class="disponible">Mente Millonaria (Disponible)</li>
+        <li class="disponible">Don Quijote (Disponible)</li>
+        <!-- Agrega mas libros segun sea necesario -->
+    </ul>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
